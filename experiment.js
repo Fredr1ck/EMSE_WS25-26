@@ -39,7 +39,10 @@ let experiment_configuration_function = (writer) => { return {
 
     introduction_pages: writer.stage_string_pages_commands([
         writer.convert_string_to_html_string(
-            "Please, open the browser in fullscreen mode (probably by pressing [F11]).\\ For each variable name shown: Press [1] if it seems understandable, or [0] if it does not."),
+            "Please, open the browser in fullscreen mode (probably by pressing [F11]).\n" +
+            "In this experiment, you will see different variable names on the screen. Some are short while others are long.\n" +
+            "Sometimes you’ll see the name by itself, and sometimes it will appear inside a small code snippet\n"+
+            "For each variable name shown: Press [1] if it seems understandable, or [0] if it does not."),
     ]),
 
     pre_run_training_instructions: writer.string_page_command(
