@@ -1,22 +1,20 @@
 # EMSE Wintersemester 2025
 
-Das ist das Default-Projekt für das eigene Experiment. In dem Experiment werden die Zeilen
+Dieses Projekt wurde im Rahmen des Moduls Empirical Methods for Software Engineering (EMSE) durchgeführt.
+Das Ziel des Experiments ist es, zu untersuchen, ob die Länge von Variablennamen (kurze vs. lange Bezeichner) einen Einfluss auf deren verständliche Wahrnehmung hat.
 
 
-    "Hello, world + random number: " + irgendeine Zufallszahl von 0-9<br>
-    Hier eine zusätzliche HTML Zeile
+Experimentbeschreibung
 
-oder die Zeile
+Teilnehmer:innen sehen während des Experiments verschiedene Variablennamen auf dem Bildschirm.
+Ein Teil der Namen ist kurz und abgekürzt (z. B. uid oder cfg), andere sind lang und beschreibend (z. B. UserID oder ConfigurationFile).
 
-    "Exit world + random number: " + irgendeine Zufallszahl von 0-9
-  
-ausgegeben. Wenn Hello, word angezeigt wird, soll die Taste [1] gedrückt werden,
-ansonsten die Taste 2.
+Manchmal erscheinen die Variablennamen allein, manchmal sind sie in einem kleinen Code-Snippet (z. B. in einer Schleife) eingebettet.
 
-- Das File "experimentation_lib.js" ist die verwendete Library. Diese muss nicht angefasst werden.
+Die Aufgabe der Teilnehmer:innen besteht darin zu entscheiden, ob der gezeigte Variablenname verständlich ist:
 
-- In der Datei "experiment.js" steht der Code, der das Experiment ausmacht. Die Kommentare in der Datei sollten helfen zu verstehen, wo Code angefasst werden muss.
+🔹 Taste [1] → verständlich
+🔹 Taste [0] → nicht verständlich
 
-Am Ende des Experiments wird eine csv-Datei ausgegeben, die in der ersten Spalte den Namen der ersten Variablen hat. Die letzte Spalte enthält die gemessene Zeit für jede Aufgabe (Zeit von der Anzeige bis zum Drücken der richtigen Taste)
+Dabei wird auch die Reaktionszeit gemessen (Zeit zwischen Anzeige und Tastendruck).
 
-Wenn ihr an euch Daten gesammlt habt, diese in Jamovi laden, dort eine ANOVA durchführen (abhängige Variable ist die Zeit, unabhängige Variable eure erste Variable).
